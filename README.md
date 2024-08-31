@@ -2,7 +2,11 @@
 
 ATMEGA328P Baremetal project using AVR-GCC, AVRDude, a USBasp programmer, and the ATMEGA328P microcontroller on an Arduino Uno board.
 
----
+🚀 Introduction
+
+Welcome to the ATMEGA328P Baremetal Project! This repository showcases how to work directly with the ATMEGA328P microcontroller without relying on high-level abstractions or libraries. Perfect for those who want to delve into low-level programming and understand microcontroller architecture at its core.
+
+The ATMEGA328P is a popular AVR microcontroller used in various applications, including the Arduino platform. This project focuses on programming it directly in assembly and C to achieve maximum control and efficiency.
 
 # ATMEGA328P Baremetal Project
 
@@ -61,8 +65,8 @@ This project uses the ATMEGA328P microcontroller, found on the Arduino Uno, for 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/atmega328p-baremetal.git
-   cd atmega328p-baremetal
+   git clone https://github.com/dohack/ATMEGA328P-Baremetal
+   cd ATMEGA328P-Baremetal
    ```
 
 2. **Compile Your Code**
@@ -78,10 +82,15 @@ This project uses the ATMEGA328P microcontroller, found on the Arduino Uno, for 
    Use AVRDude to upload the compiled code to the microcontroller:
 
    ```bash
-   avrdude -c usbasp -p m328p -U flash:w:your_firmware.hex:i
+   make upload
    ```
 
-   Replace `your_firmware.hex` with the path to your compiled hex file.
+4. **Clean Project Build**
+ Use Makefile to delete exisitng build.
+
+```bash
+   make clean
+   ```
 
 ## 🧑‍💻 Usage
 
