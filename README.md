@@ -88,7 +88,7 @@ This project uses the ATMEGA328P microcontroller, found on the Arduino Uno, for 
 4. **Clean Project Build**
  Use Makefile to delete exisitng build.
 
-```bash
+   ```bash
    make clean
    ```
 
